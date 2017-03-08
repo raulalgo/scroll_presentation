@@ -36,9 +36,12 @@ h2 {
     margin: 0 auto;*/
   }
 
-  .signature {
+  .element {
     display: block;
     position: absolute;
+  }
+
+  .signature {
     top: 15vh;
     left: 59vw;
     transform: rotate(63deg);
@@ -46,8 +49,6 @@ h2 {
   }
 
   .title {
-    display: block;
-    position: absolute;
     width: 100vw;
     height: 100vh;
     padding-top: 30vh;

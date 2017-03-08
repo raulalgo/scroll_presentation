@@ -18,16 +18,15 @@ h2 {
   #portada .content {
     /*    max-width: 1200px;
     margin: 0 auto;*/ }
-  #portada .signature {
+  #portada .element {
     display: block;
-    position: absolute;
+    position: absolute; }
+  #portada .signature {
     top: 15vh;
     left: 59vw;
     transform: rotate(63deg);
     font-size: 2vh; }
   #portada .title {
-    display: block;
-    position: absolute;
     width: 100vw;
     height: 100vh;
     padding-top: 30vh; }
