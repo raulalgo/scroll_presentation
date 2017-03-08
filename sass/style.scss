@@ -26,14 +26,16 @@ h2 {
   height: 100vh;
 }
 
+.content {
+  padding: 48px;
+}
 
 #portada {
   color: white;
   font-weight: bolder;
 
   .content {
-/*    max-width: 1200px;
-    margin: 0 auto;*/
+    padding: 0;
   }
 
   .element {
@@ -45,7 +47,11 @@ h2 {
     top: 15vh;
     left: 59vw;
     transform: rotate(63deg);
-    font-size: 2vh;
+    font-size: 3vh;
+  }
+  .subtitle {
+    font-size: 4vh;
+    margin: 16px 0 0 48px;
   }
 
   .title {
