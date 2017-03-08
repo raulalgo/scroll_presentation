@@ -1,0 +1,18 @@
+body {
+  height: 5000px;
+}
+
+div {
+  height: 100vh;
+  border-bottom-color: #000;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.story {
+  background-color: yellow;
+}
+
+.story.inviewport {
+  background-color: red;
+}
