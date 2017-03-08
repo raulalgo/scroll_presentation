@@ -1,2 +1,60 @@
+body, div, span {
+  margin: 0;
+  padding: 0; }
+
 div {
-  background-color: red; }
+  font-family: 'SF UI Display', Helvetica, Arial, sans-serif; }
+
+h2 {
+  font-size: 128px;
+  text-transform: full-width; }
+
+.story {
+  height: 100vh; }
+
+#portada {
+  color: white;
+  font-weight: bolder; }
+  #portada .content {
+    /*    max-width: 1200px;
+    margin: 0 auto;*/ }
+  #portada .signature {
+    display: block;
+    position: absolute;
+    top: 15vh;
+    left: 59vw;
+    transform: rotate(63deg);
+    font-size: 2vh; }
+  #portada .title {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 30vh; }
+    #portada .title .highlight {
+      font-size: 16.5vw;
+      text-transform: uppercase; }
+    #portada .title .outline {
+      color: rgba(230, 0, 0, 0);
+      -webkit-text-stroke-color: black;
+      -webkit-text-stroke-width: 1px; }
+  #portada .bg div {
+    display: block;
+    width: 14.28571vw;
+    height: 100vh;
+    float: left;
+    top: 50%; }
+  #portada .bg div:nth-of-type(1) {
+    background-color: #F0C400; }
+  #portada .bg div:nth-of-type(2) {
+    background-color: #98D417; }
+  #portada .bg div:nth-of-type(3) {
+    background-color: #1BB84D; }
+  #portada .bg div:nth-of-type(4) {
+    background-color: #069ADE; }
+  #portada .bg div:nth-of-type(5) {
+    background-color: #6C2EF3; }
+  #portada .bg div:nth-of-type(6) {
+    background-color: #BF1589; }
+  #portada .bg div:nth-of-type(7) {
+    background-color: #D74E0F; }

@@ -2,7 +2,8 @@ $(document).ready(function () {
   // Using scrollstory
   $("#container").scrollStory({
         contentSelector: '.story',
-        keyboard: true
+        keyboard: true,
+        autoActivateFirstItem: true
   });
 
   // For using waypoint.js

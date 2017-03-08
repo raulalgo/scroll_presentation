@@ -1,3 +1,98 @@
+$yellow: #F0C400;
+$light-green: #98D417;
+$dark-green: #1BB84D;
+$blue: #069ADE;
+$purple: #6C2EF3;
+$pink: #BF1589;
+$red: #D74E0F;
+
+$divider: 7;
+
+body, div, span {
+  margin: 0;
+  padding: 0
+}
+
 div {
-  background-color: red;
+  font-family: 'SF UI Display', Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  font-size: 128px;
+  text-transform: full-width;
+}
+
+.story {
+  height: 100vh;
+}
+
+
+#portada {
+  color: white;
+  font-weight: bolder;
+
+  .content {
+/*    max-width: 1200px;
+    margin: 0 auto;*/
+  }
+
+  .signature {
+    display: block;
+    position: absolute;
+    top: 15vh;
+    left: 59vw;
+    transform: rotate(63deg);
+    font-size: 2vh;
+  }
+
+  .title {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 30vh;
+
+
+    .highlight {
+      font-size: 16.5vw;
+      text-transform: uppercase;
+    }
+
+    .outline {
+      color: rgba(230, 0, 0, 0);
+      -webkit-text-stroke-color: black;
+      -webkit-text-stroke-width: 1px;
+
+    }
+  }
+
+  .bg div {
+    display: block;
+    width: 100vw/$divider;
+    height: 100vh;
+    float: left;
+    top: 50%;
+  }
+
+  .bg div:nth-of-type(1) {
+    background-color: $yellow;
+  }
+  .bg div:nth-of-type(2) {
+    background-color: $light-green;
+  }
+  .bg div:nth-of-type(3) {
+    background-color: $dark-green;
+  }
+  .bg div:nth-of-type(4) {
+    background-color: $blue;
+  }
+  .bg div:nth-of-type(5) {
+    background-color: $purple;
+  }
+  .bg div:nth-of-type(6) {
+    background-color: $pink
+  }
+  .bg div:nth-of-type(7) {
+    background-color: $red
+  }
 }
