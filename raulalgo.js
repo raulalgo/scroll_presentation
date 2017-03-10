@@ -2,7 +2,7 @@ $(document).ready(function () {
   // Using scrollstory
 
   var counter = 0
-  var role_steps = ["english","spanish","abreviate","siglas"]
+  var role_steps = ["english","spanish","abreviate","abreviate"]
 
   $("#container").scrollStory({
         contentSelector: '.story'
@@ -31,14 +31,20 @@ $(document).ready(function () {
 
     $('#role').click(function(){
       console.log(counter);
-      if (counter == 0) {
-        $('#lead').toggleClass('away');
-        $('#english h1').toggleClass('relocate');
+      if (counter == 0 || counter == 3) {
+        $('#'+role_steps[counter]+' .far').toggleClass('away');
+        $('#'+role_steps[counter]+' h1').toggleClass('relocate');
 
       }
       else{
-        $('#'+role_steps[counter-1]+', #' + role_steps[counter]).toggleClass("hide show")
+        clicker(counter, role_steps)
       }
       counter++;
     })
 });
+
+function clicker (current, class_array) {
+  if(current < class_array.length) {
+    $('#'+class_array[current-1]+', #'+class_array[current]).toggleClass("hide show");
+  }
+}

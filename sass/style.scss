@@ -8,13 +8,57 @@ $red: #D74E0F;
 
 $divider: 7;
 
+
+/** Ultra Light */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+/** Thin */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+
 body, div, span {
   margin: 0;
   padding: 0
 }
 
 div {
-  font-family: 'SF UI Display', Helvetica, Arial, sans-serif;
+  font-family: 'San Francisco', 'SF UI Display', Helvetica, Arial, sans-serif;
 }
 
 h2 {
@@ -132,7 +176,7 @@ h2 {
 }
 
 #role {
-  margin-top: 35vh;
+  padding-top: 35vh;
 
   div {
     width: 100%;
@@ -146,26 +190,20 @@ h2 {
 
   h1.relocate {
     transition: transform ease 0.4s;
-    transform: translate(-125px,0);
+    transform: translate(-8vw,0);
   }
 
-  #lead {
+  #abreviate h1.relocate {
+    transition: transform ease 0.3s;
+    transform: translate(-18vw,0);
+  }
+
+  .far {
     display: inline-block;
   }
 
-  #lead.anticipation {
-    transition: transform ease 0.1s;
-    transform: scale(0.9);
 
-  }
-
-  #lead.rest {
-    transition: transform ease 0.1s;
-    transform: scale(1);
-  }
-
-
-  #lead.away {
+  .far.away {
     transition: transform cubic-bezier(0.39,-0.21, 0.94, 0.6) 0.4s;
     transform: translate(-750px,-750px) rotate(2520deg);
     display: inline-block;
@@ -177,12 +215,54 @@ h2 {
     display: inline-block;*/
   }
 
+  .clicker {
+    display: none;
+  }
+
+  .clicker.show {
+    display:inline-block;
+    opacity: 1;
+    transition: all ease 1s;
+  }
+
+  .clicker.hide {
+    display: inline-block;
+    opacity: 0;
+    transition: all ease 1s
+
+  }
+
 }
 
-.hide {
-  display: none;
+/*.hide {
+  opacity: 0;
+  animation: 1s crossover_out;
 }
 
 .show {
   display: inline-block;
+  opacity: 1;
+  animation: 1s crossover_in;
 }
+
+.reveal {
+  animation: 1s crossover_out;
+}*/
+
+/*@keyframes crossover_out {
+  0% {
+    opacity: 1;
+  }
+  45%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes crossover_in {
+  0%, 55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}*/
