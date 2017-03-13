@@ -178,29 +178,45 @@ h2 {
 
 #bibliousal .cover {
   width: 100vw;
-  background: #98D417;
+  background: white;
   height: 100vh; }
 
 #bibliousal #bibliousal_caramelos .padding_wrapper {
   padding: 48px; }
+  #bibliousal #bibliousal_caramelos .padding_wrapper .seventh .button {
+    background-size: contain; }
+  #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(1) .button {
+    background-image: url("../img/btn_dark_green.png"); }
   #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(1).away {
     transition: transform cubic-bezier(0.4, -0.24, 0.67, 0.79) 1s;
     transform: translate(-3000px, 0); }
+  #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(2) .button {
+    background-image: url("../img/btn_light_green.png"); }
   #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(2).away {
     transition: transform cubic-bezier(0.4, -0.24, 0.67, 0.79) 1s;
     transform: translate(-2000px, 0); }
+  #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(3) .button {
+    background-image: url("../img/btn_yellow.png"); }
   #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(3).away {
     transition: transform cubic-bezier(0.4, -0.24, 0.67, 0.79) 1s;
     transform: translate(-1000px, 0); }
+  #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(4) .button {
+    background-image: url("../img/btn_red.png"); }
   #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(4).away {
     transition: transform cubic-bezier(0.4, -0.24, 0.67, 0.79) 0.4s;
     transform: scale(1.4); }
+  #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(5) .button {
+    background-image: url("../img/btn_pink.png"); }
   #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(5).away {
     transition: transform cubic-bezier(0.4, -0.24, 0.67, 0.79) 1s;
     transform: translate(1000px, 0); }
+  #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(6) .button {
+    background-image: url("../img/btn_purple.png"); }
   #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(6).away {
     transition: transform cubic-bezier(0.4, -0.24, 0.67, 0.79) 1s;
     transform: translate(2000px, 0); }
+  #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(7) .button {
+    background-image: url("../img/btn_blue.png"); }
   #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(7).away {
     transition: transform cubic-bezier(0.4, -0.24, 0.67, 0.79) 1s;
     transform: translate(3000px, 0); }
@@ -212,7 +228,45 @@ h2 {
   float: left;
   top: 50%; }
   .seventh .button {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     margin: 35vh auto;
-    background: #6C2EF3; }
+    box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 16px; }
+  .seventh .thebutton .effect {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    background-size: contain; }
+  .seventh .thebutton .effect:nth-of-type(1) {
+    box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2); }
+  .seventh .thebutton .effect:nth-of-type(2) {
+    background: #E8491A; }
+  .seventh .thebutton .effect:nth-of-type(3) {
+    background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%); }
+  .seventh .thebutton .effect:nth-of-type(5) {
+    box-shadow: inset 0 0 12px 0 rgba(0, 0, 0, 0.5);
+    mix-blend-mode: hard-light; }
+  .seventh .thebutton .effect:nth-of-type(4) {
+    border: solid 2px #D74E0F;
+    box-sizing: border-box; }
+  .seventh .thebutton .effect:nth-of-type(3) {
+    /* Rectangle Copy: */
+    background-image: linear-gradient(-180deg, transparent 0%, #000000 96%);
+    mix-blend-mode: soft-light;
+    height: 40px;
+    margin-top: 80px; }
+  .seventh .thebutton .effect:nth-of-type(6) {
+    /* Rectangle: */
+    background-image: linear-gradient(-180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.2) 100%);
+    border-radius: 8px;
+    mix-blend-mode: soft-light;
+    height: 24px;
+    width: 104px;
+    margin: 8px; }
+  .seventh .thebutton .effect:nth-of-type(7) {
+    background-image: url("../img/btn_red_oval_shine.png");
+    mix-blend-mode: soft-light; }
+
+/* btn_red: */
