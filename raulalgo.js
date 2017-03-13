@@ -41,6 +41,10 @@ $(document).ready(function () {
       }
       counter++;
     })
+
+    $('.thebutton').click(function(){
+      $('.seventh').addClass("away");
+    });
 });
 
 function clicker (current, class_array) {

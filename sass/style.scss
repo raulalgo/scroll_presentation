@@ -8,6 +8,10 @@ $red: #D74E0F;
 
 $divider: 7;
 
+$cent_width: 1000px;
+$scale: 1.4;
+
+$curva: cubic-bezier(0.4,-0.24, 0.67, 0.79);
 
 /** Ultra Light */
 @font-face {
@@ -234,35 +238,105 @@ h2 {
 
 }
 
-/*.hide {
-  opacity: 0;
-  animation: 1s crossover_out;
+.center {
+  width: $cent_width;
+  margin: 0 auto;
 }
 
-.show {
-  display: inline-block;
-  opacity: 1;
-  animation: 1s crossover_in;
+
+#bibliousal {
+
+  h1 {
+    text-align: center;
+  }
+
+  .content {
+    padding-top: 64px;
+  }
+
+  #bibliousal_screen {
+    width: 320px*$scale;
+    height: 568px*$scale;
+    background: $blue;
+    margin: 0 auto;
+  }
+
+  .absolute {
+    min-height: 100px;
+    min-width: 100px;
+    position: absolute;
+  }
+
+  .cover {
+    width: 100vw;
+    background: $light-green;
+    height: 100vh;
+
+  }
+
+  .item {
+  }
+
+  #bibliousal_caramelos {
+    .padding_wrapper {
+      padding: 48px;
+
+      .seventh:nth-of-type(1).away {
+        transition: transform $curva 1s;
+        // transition-delay: 0.1s;
+        transform: translate(-3000px,0);
+      }
+
+      .seventh:nth-of-type(2).away {
+        transition: transform $curva 1s;
+        // transition-delay: 0.2s;
+        transform: translate(-2000px,0);
+      }
+
+      .seventh:nth-of-type(3).away {
+        transition: transform $curva 1s;
+        // transition-delay: 0.3s;
+        transform: translate(-1000px,0);
+      }
+
+      .seventh:nth-of-type(4).away {
+        transition: transform $curva 0.4s;
+        // transition-delay: 0s;
+        transform: scale(1.4);
+      }
+
+      .seventh:nth-of-type(5).away {
+        transition: transform $curva 1s;
+        // transition-delay: 0.3s;
+        transform: translate(1000px,0);
+      }
+
+      .seventh:nth-of-type(6).away {
+        transition: transform $curva 1s;
+        // transition-delay: 0.2s;
+        transform: translate(2000px,0);
+      }
+
+      .seventh:nth-of-type(7).away {
+        transition: transform $curva 1s;
+        // transition-delay: 0.1s;
+        transform: translate(3000px,0);
+      }
+    }
+  }
 }
 
-.reveal {
-  animation: 1s crossover_out;
-}*/
+.seventh {
+  display: block;
+  width: 100%/$divider;
+  height: 100vh;
+  float: left;
+  top: 50%;
 
-/*@keyframes crossover_out {
-  0% {
-    opacity: 1;
-  }
-  45%, 100% {
-    opacity: 0;
+  .button {
+    width: 80px;
+    height: 80px;
+    margin: 35vh auto;
+    background: $purple;
   }
 }
-
-@keyframes crossover_in {
-  0%, 55% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}*/

@@ -155,34 +155,64 @@ h2 {
     opacity: 0;
     transition: all ease 1s; }
 
-/*.hide {
-  opacity: 0;
-  animation: 1s crossover_out;
-}
+.center {
+  width: 1000px;
+  margin: 0 auto; }
 
-.show {
-  display: inline-block;
-  opacity: 1;
-  animation: 1s crossover_in;
-}
+#bibliousal h1 {
+  text-align: center; }
 
-.reveal {
-  animation: 1s crossover_out;
-}*/
-/*@keyframes crossover_out {
-  0% {
-    opacity: 1;
-  }
-  45%, 100% {
-    opacity: 0;
-  }
-}
+#bibliousal .content {
+  padding-top: 64px; }
 
-@keyframes crossover_in {
-  0%, 55% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}*/
+#bibliousal #bibliousal_screen {
+  width: 448px;
+  height: 795.2px;
+  background: #069ADE;
+  margin: 0 auto; }
+
+#bibliousal .absolute {
+  min-height: 100px;
+  min-width: 100px;
+  position: absolute; }
+
+#bibliousal .cover {
+  width: 100vw;
+  background: #98D417;
+  height: 100vh; }
+
+#bibliousal #bibliousal_caramelos .padding_wrapper {
+  padding: 48px; }
+  #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(1).away {
+    transition: transform cubic-bezier(0.4, -0.24, 0.67, 0.79) 1s;
+    transform: translate(-3000px, 0); }
+  #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(2).away {
+    transition: transform cubic-bezier(0.4, -0.24, 0.67, 0.79) 1s;
+    transform: translate(-2000px, 0); }
+  #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(3).away {
+    transition: transform cubic-bezier(0.4, -0.24, 0.67, 0.79) 1s;
+    transform: translate(-1000px, 0); }
+  #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(4).away {
+    transition: transform cubic-bezier(0.4, -0.24, 0.67, 0.79) 0.4s;
+    transform: scale(1.4); }
+  #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(5).away {
+    transition: transform cubic-bezier(0.4, -0.24, 0.67, 0.79) 1s;
+    transform: translate(1000px, 0); }
+  #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(6).away {
+    transition: transform cubic-bezier(0.4, -0.24, 0.67, 0.79) 1s;
+    transform: translate(2000px, 0); }
+  #bibliousal #bibliousal_caramelos .padding_wrapper .seventh:nth-of-type(7).away {
+    transition: transform cubic-bezier(0.4, -0.24, 0.67, 0.79) 1s;
+    transform: translate(3000px, 0); }
+
+.seventh {
+  display: block;
+  width: 14.28571%;
+  height: 100vh;
+  float: left;
+  top: 50%; }
+  .seventh .button {
+    width: 80px;
+    height: 80px;
+    margin: 35vh auto;
+    background: #6C2EF3; }
