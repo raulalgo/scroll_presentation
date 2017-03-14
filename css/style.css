@@ -159,17 +159,17 @@ h2 {
   width: 1000px;
   margin: 0 auto; }
 
+#bibliousal_screen {
+  width: 448px;
+  height: 795.2px;
+  background: #069ADE;
+  margin: 0 auto; }
+
 #bibliousal h1 {
   text-align: center; }
 
 #bibliousal .content {
   padding-top: 64px; }
-
-#bibliousal #bibliousal_screen {
-  width: 448px;
-  height: 795.2px;
-  background: #069ADE;
-  margin: 0 auto; }
 
 #bibliousal .absolute {
   min-height: 100px;
@@ -293,3 +293,12 @@ h2 {
   .seventh .thebutton .effect:nth-of-type(7) {
     background-image: url("../img/btn_red_oval_shine.png");
     mix-blend-mode: soft-light; }
+
+.hide {
+  opacity: 0; }
+
+.none {
+  display: none; }
+
+#bibliousal_caramelos.show {
+  visibility: visible; }

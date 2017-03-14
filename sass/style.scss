@@ -246,6 +246,13 @@ h2 {
 }
 
 
+#bibliousal_screen {
+  width: 320px*$scale;
+  height: 568px*$scale;
+  background: $blue;
+  margin: 0 auto;
+}
+
 #bibliousal {
 
   h1 {
@@ -254,13 +261,6 @@ h2 {
 
   .content {
     padding-top: 64px;
-  }
-
-  #bibliousal_screen {
-    width: 320px*$scale;
-    height: 568px*$scale;
-    background: $blue;
-    margin: 0 auto;
   }
 
   .absolute {
@@ -492,4 +492,17 @@ h2 {
       mix-blend-mode: soft-light;
     }
   }
+}
+
+.hide {
+  opacity: 0;
+}
+
+.none {
+  display: none;
+}
+
+#bibliousal_caramelos.show {
+  visibility: visible;
+
 }

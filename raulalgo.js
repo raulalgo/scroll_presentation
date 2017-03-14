@@ -45,6 +45,11 @@ $(document).ready(function () {
     $('.thebutton').click(function(){
       $('.seventh').addClass("away");
     });
+
+    $('#bibliousal').click(function(){
+      console.log("click");
+      $("#screen_wrapper").addClass("hide")
+    });
 });
 
 function clicker (current, class_array) {
